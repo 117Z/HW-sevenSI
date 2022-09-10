@@ -75,13 +75,6 @@ public class Main {
 
     }
 
-    //Задание №7 - сгенерировать массив, подать в метод, в методе посчитать сумму и среднее значение,
-    //вернуть вычисления в виде результата. Метод декомпозировать
-    public static int randomArr(int[] generateArray) {
-        return generateArray.length;
-    }
-
-
     public static void main(String[] args) {
         //к заданию №1 - один параметр
         year(2000);
@@ -101,43 +94,14 @@ public class Main {
         char[] reverceFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};//параметр для метода
         reverceArray(reverceFullName);
 
-        // к Заданию №7
-        int[] generateArray = new int[30];
-        int[] newArr = new int[generateArray.length];
-        for (int i = 0; i < generateArray.length; i++) {
-            newArr[i] = (int) (Math.random() * 100000) + 100000;
-
-        }
-        //System.out.print(Arrays.toString(newArr));
-        //System.out.println();
-        randomArr(generateArray);
-        int summa = 0;
-        for (int i = 0; i < newArr.length; i++) {
-            summa = summa + newArr[i];
-        }
-        System.out.println(summa);
-        double averageArr = (double) summa / newArr.length;
-        System.out.println(averageArr);
-
-        //Вне задания
-        String habeba = "kulebbaayykkaa";
-        for (int i = 0; i < habeba.length() - 1; i++) {
-            boolean hiFi = (habeba.charAt(i) != habeba.charAt(i + 1));
-            if (habeba.charAt(i) == habeba.charAt(i + 1)) {
-                System.out.println(habeba.charAt(i));
-                break;
-            } else {
-                System.out.println("Tak i tak");
-            }
-            break;
-
-        }
-
 
     }
 
 
 }
+
+
+
 
 
 
